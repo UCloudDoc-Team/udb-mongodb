@@ -377,7 +377,7 @@ server，我们UDB的默认local库大小是5G。如果您需要设置成指定�
       "ok" : 1
     }
 
-\#\# mongoDB-3.2备份文件解压
+## mongoDB-3.2备份文件解压
 
 linux环境：
 
