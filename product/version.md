@@ -4,10 +4,7 @@
 
 ### 产品版本
 
-MongoDB副本集目前支持MongoDB 2.4、MongoDB 2.6、MongoDB 3.0、MongoDB 3.2、MongoDB
-3.4、MongoDB 3.6和MongoDB 4.0。
-
-MongoDB分片集群目前支持MongoDB 2.4、MongoDB 2.6、MongoDB 3.0和MongoDB 3.2。
+MongoDB副本集及分片集群支持MongoDB 2.4、MongoDB 2.6、MongoDB 3.0、MongoDB 3.2、MongoDB3.4、MongoDB 3.6和MongoDB 4.0。
 
 用户可以根据需求选择相应的云数据库版本。
 
