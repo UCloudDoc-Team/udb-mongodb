@@ -2,10 +2,6 @@
 
 {{indexmenu_n>1}}
 
-## 副本集
-
-默认一键构建三节点的副本集：Primary节点+一个Secondary节点+一个Arbiter节点构成。通过副本集中创建节点操作可支持扩展更多节点的副本集（例如：五节点、七节点或者更多个节点）：适用于对数据库有更高读取性能需求的业务场景，如读多写少场景或活动促销类突发业务需求。
-
 ## 实例类型
 
 MongoDB实例类型有：数据节点、路由节点、配置节点；数据节点可以构建副本集，通过配置节点、路由节点和副本集可以构建分片集群。
@@ -30,9 +26,15 @@ MongoDB实例提供标准机型和SSD机型。
 
 ## 版本
 
-MongoDB副本集目前支持MongoDB 2.4、MongoDB 2.6、MongoDB 3.0、MongoDB 3.2、MongoDB
-3.4、MongoDB 3.6和MongoDB 4.0，MongoDB分片集群目前支持MongoDB 2.4、MongoDB
-2.6、MongoDB 3.0和MongoDB 3.2，用户可以根据需求选择相应的云数据库版本。
+MongoDB目前支持MongoDB 2.4、MongoDB 2.6、MongoDB 3.0、MongoDB 3.2、MongoDB3.4、MongoDB 3.6和MongoDB 4.0，用户可以根据需求选择相应的云数据库版本。
+
+## 副本集
+
+默认一键构建三节点的副本集：Primary节点+一个Secondary节点+一个Arbiter节点构成。通过副本集中创建节点操作可支持扩展更多节点的副本集（例如：五节点、七节点或者更多个节点）：适用于对数据库有更高读取性能需求的业务场景，如读多写少场景或活动促销类突发业务需求。
+
+## 分片集群
+
+控制台支持构建分片集群，由Configsvr三副本+N个Mongos+数据分片（三节点副本集：Primary节点+一个Secondary节点+一个Arbiter节点）构成，路由节点和数据分片可以根据业务数据情况增减节点和分片的数量会配置。默认Configsvr三副本的分片集群支持版本：MongoDB3.4、MongoDB 3.6和MongoDB 4.0版本。MongoDB3.2及以下版本可以通过配置节点及路由节点创建自主构建
 
 ## 内存
 
