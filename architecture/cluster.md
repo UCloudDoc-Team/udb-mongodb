@@ -9,10 +9,10 @@ MongoDB能够快速搭建一个高可用可扩展的的分布式集群，具有�
 
 ![image](/images/mongodb002.png)
 
-UCloud云数据MongoDB分片集群（MongoDB3.4及以上版本），由Configsvr三副本+N个Mongos+N个shard数据分片（三节点副本集：Primary节点+1个Secondary节点+1个Arbiter节点）构成，Mongodb集群设置好分片规则，通过mongos操作数据库就能自动把对应的数据操作请求转发到对应的分片机器上。
+UCloud云数据MongoDB分片集群（MongoDB3.4及以上版本），由Configsvr三副本+N个Mongos+N个shard数据分片构成，Mongodb集群设置好分片规则，通过mongos操作数据库就能自动把对应的数据操作请求转发到对应的分片机器上。
 
 路由节点（Mongos）：数据库集群请求的入口，所有的请求都通过mongos进行协调，mongos自己就是一个请求分发中心，它负责把对应的数据请求转发到对应的shard服务器上。在生产环境中建议使用多个mongos作为请求的入口，实现负载均衡及防止其中一个故障导致所有的mongodb请求都无法操作。
 
 配置节点（Configsvr）：存储所有数据库元信息（路由、分片）的配置；路由节点第一次启动或者关掉重启就会从配置节点加载配置信息，以后如果配置节点信息变化会通知到所有路由节点更新状态，这样配置节点就能继续准确路由；对于MongoDB3.4及以上版本，UCloud云数据MongoDB分片集群中的配置节点三副本免费。
 
-分片节点（Shard）：负责存储数据库数据，每个Shard数据分片默认三节点副本集，可根据实际业务需求变更Secondary节点和Arbiter节点数量；若需横向扩展集群数据存储和读写并发能力，也可以控制台添加多个Shard数据分片。
+分片节点（Shard）：负责存储数据库数据，每个Shard数据分片默认三节点副本集（三节点副本集由Primary节点+1个Secondary节点+1个Arbiter节点构成），可根据实际业务需求变更Secondary节点和Arbiter节点数量；若需横向扩展集群数据存储和读写并发能力，也可以控制台添加多个Shard数据分片。
