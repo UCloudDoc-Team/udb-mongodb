@@ -1,6 +1,6 @@
 ## 副本集架构
 
-{{indexmenu_n>1}}
+
 
 UCloud云数据库MongoDB副本集架构：
 

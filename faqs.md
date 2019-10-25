@@ -1,6 +1,6 @@
 # FAQs
 
-{{indexmenu_n>70}}
+
 
 ## MongoDB实例功能和开源MongoDB有区别吗？
 

@@ -1,6 +1,6 @@
 # 基准测试
 
-{{indexmenu_n>50}}
+
 
 ## MongoDB 2.6 测试数据
 
