@@ -1,7 +1,8 @@
 * 云数据库 MongoDB
     * [概览](database/udb-mongodb/overview)
     * 产品简介
-        * [主要概念](database/udb-mongodb/product/concept)
+        * [什么是云数据库MongoDB](database/udb-mongodb/product/concept)
+        * [主要概念](database/udb-mongodb/product/terminology)
         * [产品优势](database/udb-mongodb/product/superiority)
         * [规格版本](database/udb-mongodb/product/version)
     * 快速上手
