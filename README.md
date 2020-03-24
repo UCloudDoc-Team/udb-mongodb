@@ -1,6 +1,6 @@
-<div class="sidebar_title icon__udb"> 云数据库 MongoDB</div>
+# 概览
 
-* [概览](/udb-mongodb/README)
+
 * 产品简介
     * [什么是云数据库MongoDB](/udb-mongodb/product/concept)
     * [主要概念](/udb-mongodb/product/terminology)
