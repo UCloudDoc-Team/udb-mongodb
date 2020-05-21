@@ -6,9 +6,11 @@
 
 备份分为自动备份和手动备份两种，自动备份每天进行一次例行备份（备份可以保存7天）。
 
+![image](/images/mongodb202005003.png)
+
 MongoDB支持手动备份，用户可以保存某些关键时间点的重要数据备份，当前手工备份的允许保留个数为3个，如果超过3个，会自动删除最早的手动备份。创建手动备份时，用户只需要输入备份名称，后台会立刻开始进行备份工作。
 
-![image](/images/mongodbv4007.png)
+![image](/images/mongodb202005004.png)
 
 ### 备份下载
 
@@ -16,13 +18,13 @@ MongoDB支持手动备份，用户可以保存某些关键时间点的重要数�
 
 要查看所有MongoDB实例的备份文件，请点击左侧导航栏的“备份管理”。
 
-![image](/images/mongodbv4008.png)
+![image](/images/mongodb202005001.png)
 
 要查看对应MongoDB实例的备份文件，请选择对应的MongoDB实例，在详情页点击“备份管理”；即可打开MongoDB实例备份列表。
 
 点击下载即可弹出下载框进行下载。
 
-![image](/images/mongodbv4006.png)
+![image](/images/mongodb202005002.png)
 
 ### 备份创建MongoDB实例
 
