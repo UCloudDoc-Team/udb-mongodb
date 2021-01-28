@@ -15,21 +15,15 @@ mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][
 
 ![image](/images/image-20210122174239234.png)
 
-![image-20210122174239234](C:\Users\dsdas\AppData\Roaming\Typora\typora-user-images\image-20210122174239234.png)
-
 首先我们得知，它的3个IP分别是10.9.149.246, 10.9.6.114, 10.9.183.226
 
 然后我们获取这个副本集的副本集ID。先对任意一个节点点击”详情”：
 
 ![image](/images/image-20210122174450415.png)
 
-![image-20210122174450415](C:\Users\dsdas\AppData\Roaming\Typora\typora-user-images\image-20210122174450415.png)
-
 进去之后，可以在详情信息中看到副本集名称：
 
 ![image](/images/image-20210122174543537.png)
-
-![image-20210122174543537](C:\Users\dsdas\AppData\Roaming\Typora\typora-user-images\image-20210122174543537.png)
 
 从图中，可以得到这个副本集的副本集名称是`udb-5x15saxi`.
 
@@ -42,8 +36,6 @@ mongodb://10.9.149.246,10.9.6.114,10.9.183.226/?replicaSet=udb-5x15saxi
 
 ![image](/images/image-20210122175500116.png)
 
-![image-20210122175500116](C:\Users\dsdas\AppData\Roaming\Typora\typora-user-images\image-20210122175500116.png)
-
 ### 备注
 * 副本集模式的IP列表不需要全部列全，只需要列的列表中能有超过1个节点的IP就可以了。客户端会自动去询问对应节点，把所有的IP列表都拿到
 
@@ -55,8 +47,6 @@ mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin
   
   ![image](/images/image-20210122180341253.png)
   
-  ![image-20210122180341253](C:\Users\dsdas\AppData\Roaming\Typora\typora-user-images\image-20210122180341253.png)
-
 ## 使用副本集连接模式实现“读写分离”
 使用副本集模式的`readPreference`参数能够实现写操作在主库进行，读操作在从库进行的”读写分离“功能。
 它有这么几个值：
@@ -72,13 +62,11 @@ mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin
 mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin?replicaSet=udb-5x15saxi&readPreference=secondary
 ```
 
-![image-20210122181835374](C:\Users\dsdas\AppData\Roaming\Typora\typora-user-images\image-20210122181835374.png)
-
 ![image](/images/image-20210122181835374.png)
 
-
-
 ## 参考文档：
+
 * https://docs.mongodb.com/v3.4/reference/connection-string/#replica-set-option
+
 * https://docs.mongodb.com/v3.4/reference/connection-string/#read-preference-options
 
