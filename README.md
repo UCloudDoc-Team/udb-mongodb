@@ -9,6 +9,7 @@
 * 快速上手
     * [一键副本集](/udb-mongodb/quick/replicaset)
     * [扩展副本集](/udb-mongodb/quick/ex-replicaset)
+    * [副本集模式连接](/udb-mongodb/quick/con-replicaset)
     * [配置节点](/udb-mongodb/quick/config)
     * [构建分片集群](/udb-mongodb/quick/cluster)
 * 产品架构
