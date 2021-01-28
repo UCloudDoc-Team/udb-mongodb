@@ -67,6 +67,5 @@ mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin
 ## 参考文档：
 
 * https://docs.mongodb.com/v3.4/reference/connection-string/#replica-set-option
-
 * https://docs.mongodb.com/v3.4/reference/connection-string/#read-preference-options
 
