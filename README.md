@@ -1,6 +1,5 @@
 # 概览
 
-
 * 产品简介
     * [什么是云数据库MongoDB](/udb-mongodb/product/concept)
     * [主要概念](/udb-mongodb/product/terminology)
