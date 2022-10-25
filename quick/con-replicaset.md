@@ -59,10 +59,8 @@ mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin
 
 上面的例子中，可以使用下面的方法实现读写分离的效果：
 ```http
-mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin?replicaSet=udb-5x15saxi&readPreference=secondary
+mongodb://ucloudbackup:thisispassword@10.9.149.246,10.9.6.114,10.9.183.226/admin?replicaSet=udb-5x15saxi&readPreference=secondaryPreferred
 ```
-
-![image](/images/image-20210122181835374.png)
 
 ## 参考文档：
 
